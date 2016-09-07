@@ -4,5 +4,6 @@ files:
   - source: ./
     destination: /var/www
 permissions:
-  - owner: ec2-user
+  - object: /var/www
+    owner: ec2-user
 
