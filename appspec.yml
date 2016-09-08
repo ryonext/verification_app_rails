@@ -3,6 +3,7 @@ os: linux
 files:
   - source: ./
     destination: /var/www
+    overwrite: yes
 permissions:
   - object: /var/www
     owner: ec2-user
