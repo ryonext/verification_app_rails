@@ -7,9 +7,9 @@ files:
 permissions:
   - object: /var/www
     owner: ec2-user
-hooks:
-  AfterInstall:
-    - location: launch.sh
-      timeout: 3600
-      runas: ec2-user
+#hooks:
+#  AfterInstall:
+#    - location: launch.sh
+#      timeout: 3600
+#      runas: ec2-user
 
