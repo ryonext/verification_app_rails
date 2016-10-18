@@ -7,12 +7,12 @@ permissions:
   - object: /var/www
     owner: ec2-user
 hooks:
-  Install:
-    - location: write_deploy_info.sh
-      timeout: 3600
-      runas: ec2-user
   AfterInstall:
     - location: launch.sh
+      timeout: 3600
+      runas: ec2-user
+  ApplicationStart:
+    - location: write_deploy_info.sh
       timeout: 3600
       runas: ec2-user
 
