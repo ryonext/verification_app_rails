@@ -9,3 +9,5 @@ else
   # reload
   /home/ec2-user/.rbenv/bin/rbenv exec bundle exec pumactl restart
 fi
+
+aws ec2 delete-tags --resources i-0f8468d099119c44b --tags Key=deployment
